@@ -18,7 +18,7 @@ int main() {
   // Affichage des résultats
   printf("a = %d, b = %d\n\n", a, b);
 
-  printf("Addition (a + b) = %d\n", addition);
+  printf("Addition (a + b) = %d\n", Addition);
   printf("Substraction (a - b) = %d\n", Substraction);
   printf("Multiplication (a * b) = %d\n", Multiplication);
   printf("Division (a / b) = %d\n", Division);
@@ -29,3 +29,4 @@ int main() {
   
   return 0;
 }
+
