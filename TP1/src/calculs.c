@@ -70,10 +70,7 @@ int main() {
         default:
             printf("Operateur inconnu: %c\n", op);
     }
-}
-
-
-    return 0;
+  return 0;
 }
 
 
