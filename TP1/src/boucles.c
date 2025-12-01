@@ -18,7 +18,9 @@ int main() {
           else                  printf("* ");
       }
       printf("\n");
+      i++;
   }
 
   return 0;
 }
+
