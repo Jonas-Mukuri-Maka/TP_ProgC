@@ -1,26 +1,32 @@
 #include <stdio.h>
 
 int main() {
-  int compteur = 5; 
+    int compteur = 5;
 
-  if (compteur >= 10) {
-      printf("Erreur : compteur doit etre strictement inferieur a 10.\n");
-      return 1;
-  }
+    for (int i = 1; i <= compteur; i++) {
 
-  for (int i = 1; i <= compteur; i++) {
-      for (int j = 1; j <= i; j++) {
-          if (i == 1)           printf("* ");
-          else if (i == 2)      printf("* ");
-          else if (i == 3 && j > 1) printf("# ");
-          else if (i == 4 && j > 1) printf("# ");
-          else if (i == 5)      printf("* ");
-          else                  printf("* ");
-      }
-      printf("\n");
-  }
+        for (int j = 1; j <= i; j++) {
 
-  return 0;
+            // Lignes 1 et 2 : que des étoiles
+            if (i == 1 || i == 2) {
+                printf("* ");
+            }
+            // Lignes 3 et 4 : # au milieu, * au début et à la fin
+            else if ((i == 3 || i == 4)) {
+                if (j == 1 || j == i)
+                    printf("* ");
+                else
+                    printf("# ");
+            }
+            // Ligne 5 : que des étoiles
+            else if (i == 5) {
+                printf("* ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
 }
 
 
