@@ -3,24 +3,25 @@
 int main() {
     int compteur = 5;
 
+    if (compteur >= 10) {
+        printf("Erreur : compteur doit etre strictement inferieur a 10.\n");
+        return 1;
+    }
+
+    // Boucle des lignes
     for (int i = 1; i <= compteur; i++) {
-
+        // Boucle des colonnes
         for (int j = 1; j <= i; j++) {
-
-            // Lignes 1 et 2 : que des étoiles
-            if (i == 1 || i == 2) {
+            // Lignes 1, 2 et dernière ligne *
+            if (i == 1 || i == 2 || i == compteur) {
                 printf("* ");
             }
-            // Lignes 3 et 4 : # au milieu, * au début et à la fin
-            else if ((i == 3 || i == 4)) {
+            // Pour les autres lignes #
+            else {
                 if (j == 1 || j == i)
                     printf("* ");
                 else
                     printf("# ");
-            }
-            // Ligne 5 : que des étoiles
-            else if (i == 5) {
-                printf("* ");
             }
         }
         printf("\n");
@@ -28,5 +29,7 @@ int main() {
 
     return 0;
 }
+
+
 
 
