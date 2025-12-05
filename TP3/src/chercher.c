@@ -36,7 +36,6 @@ int main() {
     }
     printf("Résultat : entier absent\n");
     return 0;
-    }
-
-    
 }
+
+
