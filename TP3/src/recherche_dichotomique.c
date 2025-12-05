@@ -9,7 +9,7 @@ int main() {
     srand(time(NULL));
 
     // Remplissage du Liste avec des valeurs croissantes avec chaque élément > précédent
-    for (int i = 0; i < 100; i++) {
+    for (int i = 1; i < 100; i++) {
         Liste[i] = Liste[i - 1] + (rand() % 10 + 1);
     }
 
@@ -42,3 +42,4 @@ int main() {
     printf("Résultat : entier absent\n");
     return 0;
 }
+
