@@ -9,8 +9,9 @@ int main() {
     srand(time(NULL));
 
     // Remplissage du Liste avec des valeurs croissantes avec chaque élément > précédent
+    Liste[0] = (rand() % 201) - 100;
     for (int i = 1; i < 100; i++) {
-        Liste[i] = Liste[i - 1] + (rand() % 10 + 1);
+        Liste[i] = Liste[i - 1] + (rand() % 201) - 100;
     }
 
     // Affichage du Liste trié
@@ -42,4 +43,5 @@ int main() {
     printf("Résultat : entier absent\n");
     return 0;
 }
+
 
