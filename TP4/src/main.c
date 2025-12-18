@@ -6,7 +6,7 @@ int main() {
     printf("Choisissez l'exercice a executer:\n");
     printf("1. operateur\n");
     printf("2. fichier\n");
-    printf("3. Exercice 4.7 (gestion de fichiers)\n");
+    printf("3. liste\n");
     printf("Votre choix : ");
     scanf("%d", &choix);
 
