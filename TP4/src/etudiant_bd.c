@@ -12,7 +12,7 @@ typedef struct {
     int note2;
 } Etudiant;
 
-void exercice_etudiant_bd() {
+int main () {
     Etudiant etudiants[NB_ETUDIANTS];
     char ligne[256];
     char nom_fichier[] = "etudiant.txt";
@@ -51,5 +51,7 @@ void exercice_etudiant_bd() {
     }
 
     printf("\nLes details des etudiants ont ete enregistres dans %s.\n", nom_fichier);
+    return 0;
 }
+
 
