@@ -2,7 +2,7 @@
 #include <string.h>
 #include "fichier.h"
 
-#define NB_ETUDIANTS
+#define NB_ETUDIANTS 5
 
 typedef struct {
     char nom[50];
@@ -52,3 +52,4 @@ void exercice_etudiant_bd() {
 
     printf("\nLes details des etudiants ont ete enregistres dans %s.\n", nom_fichier);
 }
+
